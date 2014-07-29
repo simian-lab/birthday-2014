@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>unquote</title>
+  <title>Simian is one year old!</title>
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
   <script src="../components/platform/platform.js"></script>
   <link rel="import" href="../components/font-roboto/roboto.html">
@@ -11,9 +11,23 @@
   html,body {
     height: 100%;
     margin: 0;
-    background-color: #E5E5E5;
+    background-color: rgba(150, 182, 11, 0.3);
     font-family: 'RobotoDraft', sans-serif;
   }
+
+  body:after {
+    width: 150px;
+    height: 80px;
+    margin: 15px;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: url('img/logo.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
   .container {
     width: 80%;
     margin: 50px auto;
@@ -27,10 +41,9 @@
     }
   }
   </style>
-  <style>body{background:#239392;}</style>
 </head>
 <body>
-<simian-birthday msg="HAPPY ANIVERSARY MONKEYS!" haveCake></simian-birthday>
+  <simian-birthday msg="Simian is one year old! :D" haveCake></simian-birthday>
 </body>
 
 </html>
