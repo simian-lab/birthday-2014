@@ -8,7 +8,6 @@
     <style>
      :host {
        font-family: sans-serif;
-       min-height: 600px;
      }
      /* Thanks to http://codepen.io/dahdragon/pen/LjyKp for a lot of this CSS*/
     .my-words {
@@ -242,12 +241,6 @@
       border-radius: 20px;
     }
 
-    .cont {
-      min-height: 600px;
-      height: 100%;
-      position: relative;
-    }
-
     @media screen and (max-width: 481px) {
       .char-container {
         left: 150px;
@@ -274,31 +267,29 @@
     </style>
 
 
-<div class="cont">
-  <div class="char-container">
-    <div class="char-head">
-      <div class="face">
-        <img src="img/monkey.svg" width="120px">
-      </div>
-    </div>
-    <div class="char-body plaid">
-      <div class="hand hand-left"></div>
-      <div class="hand hand-right"></div>
-    </div>
-    <div class="char-legs">
-      <div class="leg leg-left"></div>
-      <div class="leg leg-right"></div>
+<div class="char-container">
+  <div class="char-head">
+    <div class="face">
+      <img src="img/monkey.svg" width="120px">
     </div>
   </div>
-
-  <div class="my-words">
-    {{msg}}
+  <div class="char-body plaid">
+    <div class="hand hand-left"></div>
+    <div class="hand hand-right"></div>
   </div>
-      <template if="{{haveCake}}">
-        <div class="cake"></div>
-      </template>
-    </template>
+  <div class="char-legs">
+    <div class="leg leg-left"></div>
+    <div class="leg leg-right"></div>
+  </div>
 </div>
+
+<div class="my-words">
+  {{msg}}
+</div>
+    <template if="{{haveCake}}">
+      <div class="cake"></div>
+    </template>
+  </template>
   <script>
     Polymer('simian-birthday', {
       /**
