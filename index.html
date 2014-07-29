@@ -18,12 +18,16 @@
     background-color: rgba(150, 182, 11, 0.3);
   }
 
-  body:after {
+  .container {
+    width: 80%;
+    margin: 50px auto;
+  }
+
+  .simian {
     width: 150px;
     height: 80px;
     margin: 15px;
-    content: '';
-    position: absolute;
+    position: fixed;
     bottom: 0;
     right: 0;
     background: url('img/logo.svg');
@@ -31,10 +35,6 @@
     background-size: 100%;
   }
 
-  .container {
-    width: 80%;
-    margin: 50px auto;
-  }
   @media (min-width: 481px) {
     #tabs {
       width: 200px;
@@ -47,6 +47,7 @@
 </head>
 <body>
   <simian-birthday msg="Simian is one year old! :D" haveCake></simian-birthday>
+  <a href="http://simian.co" target="_blank" class="simian">&nbsp;</a>
 </body>
 
 </html>
