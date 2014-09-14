@@ -1,0 +1,23 @@
+{
+  "name": "birthday",
+  "version": "1.0.0",
+  "description": "birthday-2014 =============",
+  "main": "web.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://ivancamilov@github.com/simian-lab/birthday-2014.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/simian-lab/birthday-2014/issues"
+  },
+  "homepage": "https://github.com/simian-lab/birthday-2014",
+  "dependencies": {
+    "express": "^4.9.0",
+    "gzippo": "^0.2.0"
+  }
+}
